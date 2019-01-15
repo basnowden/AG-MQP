@@ -1,0 +1,14 @@
+name,cash,assets,equity,nextfirst
+Amherst Pierpont Securities LLC,Cash,Total assets,([Mm]ember[s*'*]*|Owners)\s+((equity\s*\d*)|(Equity\s*\d+)),TRUE
+Bank of Montreal,(Cash\s+\$?\s*\d+)|(Cash and)|^Cash$,(Total\s+[Ll]iabilities\s+and)|(Total\s*\$?\s*\d+),(Total [Ss]tockholder)|(equity\s+\d+),FALSE
+Barclays Capital Inc,(Cash.*\d+)|(cash equivalents),Total assets,(s equity\s*\d+)|(s equity.*\d+),TRUE
+CF Secured LLC,Cash and,Total assets,members' equity,TRUE
+Citigroup Global Markets Inc,Cash and,(Total\s+[Ll]iabilities\s+and)|(Total assets),(s equity.*\d+)|(stockholders equity),FALSE
+Credit Suisse Securities (USA) LLC,Cash and,(Total\s+[Ll]iabilities\s+and)|(Total assets),(Total mM?e[Mm](i)*be[rt].*s)|(s equity\s*\d+),TRUE
+Daiwa Capital Markets America Inc,(Cash and)|(Cash\s*\$?\s*\d+),Total liabilities and,stockholder.?[s*'*]* equity,TRUE
+Guggenheim Securities LLC,((?i)Cash and)|(Cash\s*\$?\s*\d+),((?i)Total assets)|((?i)Total\s*\$?\s*\d+),([Mm]ember[s*'*]* equity\s*\$?\s*\d+)|(?i)^MEMBER.S CAPITAL\s*\$?\s*\d+$|^\s*Members equity$,FALSE
+ING Capital Markets LLC,(Cash and)|(Cash\s*\$?\s*\d+)|^Cash$,Total assets,(Member.?[s*'*]* equity)|(Total shareholder.?[s*'*]* equity),TRUE
+Mitsubishi UFJ Securities (USA) Inc,(Cash and)|(Cash\s*\$?\s*\d+),(?i)Tot\s?al assets,Total stockholder.?[s*'*]*,FALSE
+Natixis Securities Americas LLC as Agent for Natixis,^(a \d+ \[)|(Cash and)|(Cash\s*\d+)|(Cash .*\d+)|CESH|CaS|VCS|PCM,(?i)Tot\s?al\s?assets,(Total member?[s*'*]*)|(Total stockholder?[s*'*]*)|(Member?[s*'*]* equi[tl]y)|(TOTAL OWNERSHIP EQUITY),TRUE
+Nomura Securities International Inc,(Cash and)|(Cash\s*\d+),(?i)Tot\s?al assets,(Total stockholder?[s*'*]*)|(Stockholder.s equity.*\d+),FALSE
+South Street Securities LLC,Cash,Total assets,(Member[s*'*]*\s+((equity\s*\d*)|(Equity\s*\d+)))|(members' equity\s+\d+),TRUE
